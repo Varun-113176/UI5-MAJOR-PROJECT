@@ -1,3 +1,4 @@
+
 <mvc:View controllerName="fioriproject.controller.HR"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
@@ -58,6 +59,4 @@
 </content>
 
 </Page>
-
-
 </mvc:View>
