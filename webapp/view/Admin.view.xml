@@ -1,0 +1,84 @@
+<mvc:View controllerName="fioriproject.controller.Admin"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+     <Page id="_IDGenPage1"
+    title="Admin Login"
+    class="sapUiResponsiveContentPadding">
+
+    <content>
+
+        <VBox id="_IDGenVBox" height="100%"
+              alignItems="Center"
+              justifyContent="Center">
+
+            <Panel id="_IDGenPanel" width="360px"
+                   class="sapUiSmallMargin"
+                   backgroundDesign="Solid">
+
+                <VBox id="_IDGenVBox1" alignItems="Center"
+                      class="sapUiMediumMargin">
+
+                    <!-- TITLE -->
+                    <Title id="_IDGenTitle"
+                        text="Login"
+                        level="H2"
+                        class="sapUiSmallMarginBottom"/>
+
+                    <!-- EMAIL -->
+                    <Input
+                        id="emailInput1"
+                        placeholder="Admin Email"
+                        type="Email"
+                        width="100%"
+                        required="true"
+                        class="sapUiSmallMarginBottom"/>
+
+                    <!-- PASSWORD -->
+                    <Input
+                        id="passwordInput1"
+                        placeholder="Password"
+                        type="Password"
+                        width="100%"
+                        required="true"
+                        class="sapUiSmallMarginBottom"/>
+
+                    <!-- SHOW PASSWORD -->
+                    <CheckBox id="_IDGenCheckBox"
+                        text="Show Password"
+                        select="onShowPassword"
+                        class="sapUiSmallMarginBottom"/>
+
+                    <!-- LOGIN BUTTON -->
+                    <Button id="_IDGenButton"
+                        text="SIGN IN"
+                        type="Emphasized"
+                        width="100%"
+                        press="onLogin"
+                        class="sapUiMediumMarginBottom"/>
+
+                    <!-- FORGOT PASSWORD -->
+                    <Link id="_IDGenLink"
+                        text="Forgot Password?"
+                        press="onForgotPassword"
+                        class="sapUiTinyMarginBottom"/>
+
+                    <!-- SIGNUP -->
+                    <HBox id="_IDGenHBox">
+                        <Text id="_IDGenText" text="Don't have an account? "/>
+                        <Link id="_IDGenLink1"
+                            text="Sign up"
+                            press="onOpenSignup"/>
+                    </HBox>
+
+                </VBox>
+
+            </Panel>
+
+        </VBox>
+
+    </content>
+
+</Page>
+
+
+</mvc:View>
